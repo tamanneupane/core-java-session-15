@@ -1,0 +1,19 @@
+Git is a version control tool.
+
+x.x.x
+- Major
+- Minor
+- Patch
+
+Example : 1.0.0, 1.0.1, 1.1.0, 2.0.0
+
+1.0.0
+1.0.1
+1.0.2
+
+# Why to use git?
+1. Sharing the code made easy with good authentication mechanism.
+2. When working in group merging the code changes done by everyone.
+3. Disaster recovery can be done easily.
+4. Provide feature called gitignore.
+5. Easy movement or revert between different versions.
