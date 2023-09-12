@@ -7,17 +7,23 @@ public class ChaseBankApplication {
 
         // data_type name = value
 
-        Langauge english = new Langauge();
-        english.languageId = 1;
-        english.languageName = "English";
+        Language english = new Language();
+//        english.languageId = 1;
+        english.setLanguageId(1);
+//        english.languageName = "English";
+        english.setLanguageName("English");
 
-        Langauge nepali = new Langauge();
-        nepali.languageId = 2;
-        nepali.languageName = "Nepali";
+        Language nepali = new Language();
+//        nepali.languageId = 2;
+        nepali.setLanguageId(2);
+//        nepali.languageName = "Nepali";
+        nepali.setLanguageName("Nepali");
 
-        Langauge french = new Langauge();
-        french.languageId = 3;
-        french.languageName = "French";
+        Language french = new Language();
+//        french.languageId = 3;
+        french.setLanguageId(3);
+//        french.languageName = "French";
+        french.setLanguageName("French");
 
         Menu personalMenu = new Menu();
         personalMenu.menuId = 1;
@@ -26,7 +32,10 @@ public class ChaseBankApplication {
         personalMenu.isExternal = false;
         personalMenu.externalURL = null;
         personalMenu.isActive = true;
-        personalMenu.languageId = english.languageId;
+//        personalMenu.languageId = english.languageId;
+        personalMenu.languageId = english.getLanguageId();
+
+        personalMenu.toString();
 
         Menu personalNepali = new Menu();
         personalNepali.menuId = 2;
@@ -35,8 +44,10 @@ public class ChaseBankApplication {
         personalNepali.isExternal = false;
         personalNepali.externalURL = null;
         personalNepali.isActive = true;
-        personalNepali.languageId = nepali.languageId;
+//        personalNepali.languageId = nepali.languageId;
+        personalNepali.languageId = nepali.getLanguageId();
 
+        personalNepali.toString();
 
         Menu businessMenu = new Menu();
         Menu commercialMenu = new Menu();
