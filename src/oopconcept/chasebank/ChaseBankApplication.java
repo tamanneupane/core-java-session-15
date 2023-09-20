@@ -7,11 +7,13 @@ public class ChaseBankApplication {
 
         // data_type name = value
 
-        Language english = new Language();
-//        english.languageId = 1;
-        english.setLanguageId(1);
-//        english.languageName = "English";
-        english.setLanguageName("English");
+//        Language english = new Language();
+////        english.languageId = 1;
+//        english.setLanguageId(1);
+////        english.languageName = "English";
+//        english.setLanguageName("English");
+
+        Language english = new Language(1,"English");
 
         Language nepali = new Language();
 //        nepali.languageId = 2;

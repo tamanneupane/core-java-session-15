@@ -2,7 +2,9 @@ package oopconcept.abstraction;
 
 public class BankUtils {
 
-    public boolean transferBalance(Account fromAccount, Account toAccount, double balanceToBeTransferred){
+    private BankUtils(){}
+
+    public static boolean transferBalance(Account fromAccount, Account toAccount, double balanceToBeTransferred){
         if(fromAccount.getBalance() < balanceToBeTransferred){
             return false;
         }

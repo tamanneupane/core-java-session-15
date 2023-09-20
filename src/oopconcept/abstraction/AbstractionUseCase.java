@@ -1,5 +1,7 @@
 package oopconcept.abstraction;
 
+import java.util.Scanner;
+
 public class AbstractionUseCase {
 
     public static void main(String[] args) {
@@ -16,10 +18,12 @@ public class AbstractionUseCase {
         accountB.setSocialSecurityNumber("987654321");
         accountB.setBalance(1000);
 
-        BankUtils bankUtils = new BankUtils();
-        bankUtils.transferBalance(accountA, accountB, 500);
-        bankUtils.transferBalance(accountB, accountA, 500);
-        bankUtils.transferBalance(accountA, accountB, 1000);
+//        BankUtils bankUtils = new BankUtils();
+        BankUtils.transferBalance(accountA, accountB, 500);
+        BankUtils.transferBalance(accountB, accountA, 500);
+        BankUtils.transferBalance(accountA, accountB, 1000);
+
+
 
     }
 }

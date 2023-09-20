@@ -10,6 +10,18 @@ public class Language {
     private int languageId;
     private String languageName;
 
+    // Default Constructor
+    public Language(){
+        this.languageId = 0;
+        this.languageName = "";
+    }
+
+    //Parameterized Constructor
+    public Language(int languageId, String languageName){
+        this.languageId = languageId;
+        this.languageName = languageName;
+    }
+
     // this = english/nepali
     public void setLanguageId(int languageId){
         this.languageId = languageId;
