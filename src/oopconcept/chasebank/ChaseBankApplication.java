@@ -21,6 +21,7 @@ public class ChaseBankApplication {
 //        nepali.languageName = "Nepali";
         nepali.setLanguageName("Nepali");
 
+
         Language french = new Language();
 //        french.languageId = 3;
         french.setLanguageId(3);
