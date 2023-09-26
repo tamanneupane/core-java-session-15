@@ -3,6 +3,8 @@ package predefinedclass;
 import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class StringPractice {
 
@@ -121,6 +123,8 @@ public class StringPractice {
 
         String input = "5 12";
 
+        // output 5 10
+
         String searchText = " ul500004".trim().toUpperCase();
 
         System.out.println(searchText);
@@ -128,6 +132,26 @@ public class StringPractice {
         float f = 20.7f;
         String sFloat =  String.valueOf(f);
         System.out.println(sFloat);
+
+        //   N > 0
+        // N < 500000
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("5");
+        sb.append("10");
+        sb.append("15");
+        sb.append("20");
+        sb.append("25");
+        sb.append("30");
+
+        String finalOutput = sb.toString();
+
+        System.out.println(finalOutput);
+
+        String input1 ="5 12";
+        String[] splitInput = input1.split(" ");
+
+        List<Integer> intList = Arrays.stream(splitInput).map(Integer::parseInt).collect(Collectors.toList());
 
     }
 }

@@ -32,7 +32,5 @@ public class RelationalOperator {
         System.out.println("Second : "+ isSecondDivision );
         System.out.println("Third : "+ isThirdDivision );
         System.out.println("Failed : "+ isFail );
-
-
     }
 }
