@@ -33,5 +33,22 @@ public class ArrayBasics {
 
         System.out.println(totalMarks);
 
+        String[] names = {"A", "B", "C"};
+//        String[] tempNames = new String[names.length + 1];
+
+//        int i = 0;
+//        for(String name : names){
+//            tempNames[i] = name;
+//            i++;
+//        }
+//
+//        names = tempNames;
+
+        names = Arrays.copyOf(names, names.length + 5);
+
+        System.out.println(Arrays.toString(names));
+
+
+
     }
 }

@@ -27,5 +27,7 @@ public class SchoolApp {
         System.out.println(taman.getGender());
         System.out.println(taman.getSubject());
 
+        System.out.println(taman.toString());
+
     }
 }
