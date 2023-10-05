@@ -26,6 +26,11 @@ public class Manager extends Person{
     }
 
     @Override
+    public void printDescription() {
+
+    }
+
+    @Override
     public String toString() {
         return "Employee{" +
                 "bonus=" + bonus +

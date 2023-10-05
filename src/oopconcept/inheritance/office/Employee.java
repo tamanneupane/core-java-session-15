@@ -1,9 +1,10 @@
 package oopconcept.inheritance.office;
 
 import java.time.LocalDate;
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Employee extends Person{
+public class Employee extends Person implements Comparable<Employee> {
 
     private long employeeId;
 
@@ -42,5 +43,22 @@ public class Employee extends Person{
                 ",joiningDate=" + super.getJoiningDate() +
                 ",jobResponsibility=" + super.getJobResponsibility() +
                 '}';
+    }
+
+    @Override
+    public void printDescription() {
+
+    }
+
+    //-1
+    // 0
+    // 1
+
+    @Override
+    public int compareTo(Employee o) {
+        //return this.getName().compareTo(o.getName());
+        //return Long.compare(this.getEmployeeId(), o.getEmployeeId());
+        //return Double.compare(this.getSalary(), o.getSalary());
+        return o.getJoiningDate().compareTo(this.getJoiningDate());
     }
 }

@@ -2,7 +2,7 @@ package oopconcept.inheritance.office;
 
 import java.time.LocalDate;
 
-public class Person {
+public abstract class Person {
     private String name;
     private String jobResponsibility;
     private LocalDate joiningDate;
@@ -51,4 +51,6 @@ public class Person {
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+    public abstract void printDescription();
 }
